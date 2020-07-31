@@ -1,0 +1,40 @@
+@import '../utils/variables'
+@import '../utils/keyframes'
+@import '../utils/mixins/mixin'
+
+.tab
+    &_column
+        &.nav
+            &-tabs
+                padding: 0
+                border: none
+                border-right: 1px solid rgba($color-grey, 0.35)
+                .nav
+                    &-item
+                        padding-right: 0
+                        padding-left: 0
+                        width: 100%
+                        display: flex
+                        .nav-link
+                            width: 100%
+                            display: block
+                            padding: 0
+                            span
+                                width: 100%
+                                display: block
+                                color: $color-black
+                                & +
+                                    span
+                                        opacity: 0.65
+                            &::after
+                                background: transparent !important
+                                // +transition-slow
+                                
+                            &.active
+                                &:after
+                                    border-right: 3px solid $color-theme
+                                    height: 100%
+                                    background: transparent !important
+                                    // +transition-slow
+                                    // +animation(heightInc, 0.1s, linear)
+                                   

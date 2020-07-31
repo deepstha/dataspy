@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Page Title  -->
+    <title>Data Spy</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" type="text/css" href="css/dashlite.css?ver=1.8.0">
+    <link id="skin-default" type="text/css" rel="stylesheet" href="css/theme.css?ver=1.8.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+</head>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script> 
+    $(function(){
+        $("#sidebar-menu").load("includes/sidebar.html"); 
+        $("#header").load("includes/header.html"); 
+        $("#msg").load("includes/chatbox.html"); 
+        $("#footer").load("includes/footer.html"); 
+    });
+</script> 
+
+<body class="nk-body bg-white has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- sidebar @s -->
+            <div id="sidebar-menu">
+
+            </div>
+            <!-- sidebar @e -->
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- main header @s -->
+                <div id="header" class="nk-header nk-header-fixed is-light">
+                </div>
+                <!-- main header @e -->
+
+                <!-- content @s -->
+                <div class="nk-content nk-content-fluid p-0">
+                    <div class="container-xl wide-lg">
+                        <div class="nk-content-body">
+                            <div class="nk-msg" id="msg">
+
+                            </div><!-- .nk-chat -->
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+
+                <!-- footer @s -->
+                <div id="footer" class="nk-footer">
+                </div>
+                <!-- footer @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- JavaScript -->
+
+    <script src="js/bundle.js?ver=1.8.0"></script>
+    <script src="js/scripts.js?ver=1.8.0"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Page Title  -->
+    <title>Data Spy</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" type="text/css" href="css/dashlite.css?ver=1.8.0">
+    <link id="skin-default" type="text/css" rel="stylesheet" href="css/theme.css?ver=1.8.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+</head>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script> 
+    $(function(){
+        $("#sidebar-menu").load("includes/sidebar.html"); 
+        $("#header").load("includes/header.html"); 
+        $("#footer").load("includes/footer.html"); 
+    });
+</script> 
+
+<body class="nk-body bg-white has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- sidebar @s -->
+            <div id="sidebar-menu">
+                <!-- side-menu imported here -->
+            </div>
+            <!-- sidebar @e -->
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- main header @s -->
+                <div id="header" class="nk-header nk-header-fixed is-light">
+                </div>
+                <!-- main header @e -->
+
+                <!-- content @s -->
+                <div class="nk-content nk-content-fluid">
+                    <div class="container-xl wide-lg">
+                        <div class="nk-content-body">
+                            <div class="nk-block-head nk-block-head-sm">
+                                <div class="d-flex justify-betwee border">
+                                    <!-- <div class="nk-block-head-content">
+                                        <h3 class="nk-block-title page-title">Investment Dashboard</h3>
+                                        <div class="nk-block-des text-soft">
+                                            <p>Welcome to Crypto Invest Dashboard</p>
+                                        </div>
+                                    </div> -->
+                                    <!-- Device info list -->
+                                    
+                                    <div class="p-4">
+                                        <div class="nk-wg-action">
+                                            <div class="nk-wg-action-content">
+                                                <em class="icon ni ni-mobile"></em>
+                                                <div class="title">Device Model</div>
+                                                <p>Galaxy S6+</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <div class="nk-wg-action">
+                                            <div class="nk-wg-action-content">
+                                                <em class="icon ni ni-android"></em>
+                                                <div class="title">Device OS Version</div>
+                                                <p>9.0</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <div class="nk-wg-action">
+                                            <div class="nk-wg-action-content">
+                                                <em class="icon ni ni-clipboad-check-fill"></em>
+                                                <div class="title">Battery Level</div>
+                                                <p>90%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <div class="nk-wg-action">
+                                            <div class="nk-wg-action-content">
+                                                <em class="icon ni ni-map-pin"></em>
+                                                <div class="title">Location</div>
+                                                <p>Kathmandu</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto p-3 border-left  d-inline-flex">
+                                        <div class="nk-wg-action">
+                                            <div class="nk-wg-action-content p-2">
+                                                <!-- <em class="icon ni ni-clipboad-check-fill"></em> -->
+                                                <h6 class="titl">Device Info</h6>
+                                                <p>Sync last 5 min ago</p> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Device info list -->
+                                </div>
+                                <!-- .nk-block-between -->
+                            </div>
+                            <!-- .nk-block-head -->
+                            <div class="nk-block">
+                                <div class="row g-gs">
+                                    <!--Recent contact-->
+                                    <div class="col-md-6 col-xxl-4">
+                                        <div class="card card-bordered card-full">
+                                            <div class="card-inner d-flex flex-column h-100">
+                                                <div class="card-title-group mb-3">
+                                                    <div class="card-title">
+                                                        <h6 class="title">Recent Contacts</h6>
+                                                        <p>Recent 5 most calling contacts</p>
+                                                    </div>
+                                                    <div class="card-tools mt-n4 mr-n1">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><span>15 Days</span></a></li>
+                                                                    <li><a href="#" class="active"><span>30 Days</span></a></li>
+                                                                    <li><a href="#"><span>3 Months</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-list gy-3">
+                                                    <div class="d-flex">
+                                                        <div class="mr-2 user-avatar"><img src="images/avatar/a-sm.jpg" alt=""></div>
+                                                        <div class="progress-wrap w-100">
+                                                            <div class="progress-text">
+                                                                <div class="progress-label"><span>Ram</span> - 9841147892</div>
+                                                                <div class="progress-amount">90</div>
+                                                            </div>
+                                                            <div class="progress progress-md">
+                                                                <div class="progress-bar" data-progress="90"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="mr-2 user-avatar"><img src="images/avatar/d-sm.jpg" alt=""></div>
+                                                        <div class="progress-wrap w-100">
+                                                            <div class="progress-text">
+                                                                <div class="progress-label"><span>Sital</span> - 9851146892</div>
+                                                                <div class="progress-amount">60</div>
+                                                            </div>
+                                                            <div class="progress progress-md">
+                                                                <div class="progress-bar bg-orange" data-progress="60"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="mr-2 user-avatar"><img src="images/avatar/c-sm.jpg" alt=""></div>
+                                                        <div class="progress-wrap w-100">
+                                                            <div class="progress-text">
+                                                                <div class="progress-label"><span>Anita</span> - 9848197892</div>
+                                                                <div class="progress-amount">40</div>
+                                                            </div>
+                                                            <div class="progress progress-md">
+                                                                <div class="progress-bar bg-teal" data-progress="40"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="mr-2 user-avatar"><img src="images/avatar/a-sm.jpg" alt=""></div>
+                                                        <div class="progress-wrap w-100">
+                                                            <div class="progress-text">
+                                                                <div class="progress-label"><span>Rakesh</span> - 9845643892</div>
+                                                                <div class="progress-amount">30</div>
+                                                            </div>
+                                                            <div class="progress progress-md">
+                                                                <div class="progress-bar bg-pink" data-progress="30"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="mr-2 user-avatar"><img src="images/avatar/b-sm.jpg" alt=""></div>
+                                                        <div class="progress-wrap w-100">
+                                                            <div class="progress-text">
+                                                                <div class="progress-label"><span>Nikesh</span> - 9849223892</div>
+                                                                <div class="progress-amount">10</div>
+                                                            </div>
+                                                            <div class="progress progress-md">
+                                                                <div class="progress-bar bg-azure" data-progress="10"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                    
+                                                </div>
+                                                <!-- <div class="invest-top-ck mt-auto">
+                                                    <canvas class="iv-plan-purchase" id="planPurchase"></canvas>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Recent contact end-->
+                                    <!--Location-->
+                                    <div class="col-md-6 col-xxl-4">
+                                        <div class="card card-bordered card-full">
+                                            <div class="card-inner d-flex flex-column h-100">
+                                                <div class="card-title-group mb-3">
+                                                    <div class="card-title">
+                                                        <h6 class="title">Location</h6>
+                                                        <p>Recent Location</p>
+                                                    </div>
+                                                    <div class="card-tools mt-n4 mr-n1">
+                                                        <div class="drodown">
+                                                            <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#"><span>15 Days</span></a></li>
+                                                                    <li><a href="#" class="active"><span>30 Days</span></a></li>
+                                                                    <li><a href="#"><span>3 Months</span></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.27689201412!2d85.29111313454997!3d27.70903193365019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1595903995527!5m2!1sen!2snp"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                                <div class="analytics-map">
+                                                    <!-- <div class="vector-map" id="worldMap">Map</div> -->
+                                                    
+                                                    <!-- <table class="analytics-map-data-list">
+                                                        <tr class="analytics-map-data">
+                                                            <td class="country">United States</td>
+                                                            <td class="amount">12,094</td>
+                                                            <td class="percent">23.54%</td>
+                                                        </tr>
+                                                        <tr class="analytics-map-data">
+                                                            <td class="country">India</td>
+                                                            <td class="amount">7,984</td>
+                                                            <td class="percent">7.16%</td>
+                                                        </tr>
+                                                        <tr class="analytics-map-data">
+                                                            <td class="country">Turkey</td>
+                                                            <td class="amount">6,338</td>
+                                                            <td class="percent">6.54%</td>
+                                                        </tr>
+                                                        <tr class="analytics-map-data">
+                                                            <td class="country">Bangladesh</td>
+                                                            <td class="amount">4,749</td>
+                                                            <td class="percent">5.29%</td>
+                                                        </tr>
+                                                    </table> -->
+                                                </div>
+                                                <!-- <div class="invest-top-ck mt-auto">
+                                                    <canvas class="iv-plan-purchase" id="planPurchase"></canvas>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Recent contact end-->
+                                    <!--Phone Message-->
+                                    <div class="col-md-6 col-xxl-4">
+                                        <div class="card card-bordered card-full">
+
+                                            <div class="card-inner d-flex flex-column h-100">
+                                                <div class="card-inner-group">
+                                                   
+                                                        <div class="card-title-group mb-3">
+                                                            <div class="card-title">
+                                                                <h6 class="title">Phone Messages</h6>
+                                                            </div>
+                                                            <div class="card-tools">
+                                                                <a href="html/user-list-regular.html" class="link">View All</a>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        <div class="card-inner card-inner-md px-0">
+                                                        <div class="user-card">
+                                                            <div class="user-avatar bg-primary-dim">
+                                                                <span>AB</span>
+                                                            </div>
+                                                            <div class="user-info">
+                                                                <span class="lead-text">Abu Bin Ishtiyak</span>
+                                                                <span class="sub-text">9848557958</span>
+                                                            </div>
+                                                            <div class="user-action">
+                                                                <div class="progress-amount">2</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-inner card-inner-md px-0">
+                                                        <div class="user-card">
+                                                            <div class="user-avatar bg-pink-dim">
+                                                                <span>SW</span>
+                                                            </div>
+                                                            <div class="user-info">
+                                                                <span class="lead-text">Sharon Walker</span>
+                                                                <span class="sub-text">9841857958</span>
+                                                            </div>
+                                                            <div class="user-action">
+                                                                <div class="progress-amount">18</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-inner card-inner-md px-0">
+                                                        <div class="user-card">
+                                                            <div class="user-avatar bg-warning-dim">
+                                                                <span>GO</span>
+                                                            </div>
+                                                            <div class="user-info">
+                                                                <span class="lead-text">Gloria Oliver</span>
+                                                                <span class="sub-text">9845557958</span>
+                                                            </div>
+                                                            <div class="user-action">
+                                                                <div class="progress-amount">20</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-inner card-inner-md px-0">
+                                                        <div class="user-card">
+                                                            <div class="user-avatar bg-success-dim">
+                                                                <span>PS</span>
+                                                            </div>
+                                                            <div class="user-info">
+                                                                <span class="lead-text">Phillip Sullivan</span>
+                                                                <span class="sub-text">9846557977</span>
+                                                            </div>
+                                                            <div class="user-action">
+                                                                <div class="user-action">
+                                                                    <div class="progress-amount">2</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="invest-top-ck mt-auto">
+                                                    <canvas class="iv-plan-purchase" id="planPurchase"></canvas>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Phone Message end-->
+                                    <!--Phone Message-->
+                                    <div class="col-md-6 col-xxl-4">
+                                        <div class="card card-bordered card-full">
+                                            
+
+                                                    <div class="card-inner">
+                                                        <div class="card-title-group mb-3">
+                                                            <div class="card-title">
+                                                                <h6 class="title">Phone Activities</h6>
+                                                            </div>
+                                                            <div class="card-tools">
+                                                                <a href="html/user-list-regular.html" class="link">View All</a>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="nk-store-statistics">
+                                                            <li class="item d-flex">
+                                                                <div class="info mb-3">
+                                                                    <div class="lead-text">Photos</div>
+                                                                    <div class="sub-text"><b>156</b></div>
+                                                                </div>
+                                                                <em class="icon icon-center ml-auto bg-primary-dim ni ni-bag"></em>
+                                                            </li>
+                                                            <li class="item d-flex">
+                                                                <div class="info mb-3">
+                                                                    <div class="lead-text">Videos</div>
+                                                                    <div class="sub-text"><b>100</b></div>
+                                                                </div>
+                                                                <em class="icon icon-center ml-auto bg-info-dim ni ni-video"></em>
+                                                            </li>
+                                                            <li class="item d-flex">
+                                                                <div class="info mb-3">
+                                                                    <div class="lead-text">Calls</div>
+                                                                    <div class="sub-text"><b>245</b></div>
+                                                                </div>
+                                                                <em class="icon icon-center ml-auto bg-pink-dim ni ni-call"></em>
+                                                            </li>
+                                                            <li class="item d-flex">
+                                                                <div class="info mb-3">
+                                                                    <div class="lead-text">Messages</div>
+                                                                    <div class="sub-text"><b>80</b></div>
+                                                                </div>
+                                                                <em class="icon icon-center ml-auto bg-secondary-dim ni ni-msg"></em>
+                                                            </li>
+                                                            <li class="item d-flex">
+                                                                <div class="info mb-3">
+                                                                    <div class="lead-text">Location</div>
+                                                                    <div class="sub-text"><b>20</b></div>
+                                                                </div>
+                                                                <em class="icon icon-center ml-auto bg-purple-dim ni ni-map-pin"></em>
+                                                            </li>
+                                                        </ul>
+                                                    </div><!-- .card-inner -->
+
+
+                                        </div>
+                                    </div>
+                                    <!--Phone Message end-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+
+                <!-- footer @s -->
+                <div id="footer" class="nk-footer">
+                </div>
+                <!-- footer @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- JavaScript -->
+
+    <script src="js/bundle.js?ver=1.8.0"></script>
+    <script src="js/scripts.js?ver=1.8.0"></script>
+    <script src="js/charts/gd-invest.js?ver=1.8.0"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

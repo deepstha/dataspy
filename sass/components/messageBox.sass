@@ -1,0 +1,21 @@
+
+@import '../utils/mixins/mixin'    
+
+.nk
+    &-msg
+        +calc(max-height ,calc(100vh - 132px) )
+        &-info
+            padding-right: 20px
+        .chat
+            &-msg
+                background-color: rgba($color-light-grey, 0.9)
+        
+    &-chat
+        &-profile
+            // opacity: 0   
+
+.accordion
+    &-item
+        .accordion
+            &-inner,  &-head
+                border: none !important

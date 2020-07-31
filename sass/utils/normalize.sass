@@ -1,0 +1,129 @@
+@import '../utils/variables'
+@import 'mixins/mixin'
+
+// headline
+h1,h2,h3,h4,h5
+    color: $color-black
+// small
+//     opacity: 0.65
+label
+    height: 20px
+    line-height: 20px
+    font-size: 16px
+
+input
+    font-size: 16px
+    max-height: 32px
+    border-radius: 5px
+
+.d
+    &-inline
+        &-flex
+            display: inline-flex
+            align-items: center
+            vertical-align: middle
+
+.img
+    &__wrap
+        min-width: 150px
+        min-height: 200px
+        background-color: $color-grey
+        padding: 0
+        margin: 0
+
+// margin/padding
+.p
+    &-2
+        padding: 15px
+    &-3
+        padding: 30px
+
+.m
+    &-r
+        &-2
+            margin-right: 10px
+        &-3
+            margin-right: 20px
+        &-5
+            margin-right: 40px
+    &-b
+        &-5
+            margin-bottom: 40px
+
+//background color
+.bg
+    &-white
+        background-color: rgba($color-white , 1)
+    &-light
+        background-color: rgba($color-grey , 0.1)
+
+//list style
+.list
+    &-style
+        &-wrap
+            padding: 8px 0
+            margin: 0
+            li
+                list-style: none
+                margin-bottom: 0  
+        &-none
+            padding-left: 0
+            li
+                list-style: none
+                margin-bottom: 10px
+    &-item
+        +display-flex
+        align-items: center
+        height: 48px
+        padding: 0 16px
+        cursor: pointer
+        color: rgba($color-black, 0.8)
+        font-size: 1rem
+        li.active
+            & + li
+                opacity: 0.3
+        &--mirror
+            li
+                +display-flex 
+                span
+                    width: 100%
+                    margin: 0 20px
+                    text-align: right
+                    & +
+                        span
+                            text-align: left
+
+            
+            align-items: center
+        // &:hover
+        //     background-color: whitesmoke
+        // &:first-child
+        //     background-color: whitesmoke
+
+.selected
+    &-item
+        background-color: rgba($color-primary, 0.1)
+
+.absolute
+    &_item
+        &--center
+            position: absolute
+            height: 100%
+            width: 100%
+            top: 0
+            left: 0
+            background: rgba($color-black,0.5)
+            & >
+                div,em
+                    color: $color-white
+                    transform: translate(-50%, -50%)
+                    position: absolute
+                    left: 50%
+                    top: 50%
+                    font-size: 32px
+
+
+//iframe
+iframe
+    width: 100%
+    height: 100%

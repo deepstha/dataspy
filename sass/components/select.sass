@@ -1,0 +1,89 @@
+@import '../utils/variables'
+@import '../utils/mixins/mixin'
+@import '../utils/keyframes'
+
+.selectbox
+  position: relative
+  &__menu
+    display: none
+    position: absolute
+    min-width: 112px
+    +transform(scale(0.8))
+    &.is
+      &-active
+        display: inline-block
+        transform-origin: center bottom
+        top: 56px
+        left: 0
+        max-height: 220px
+        +animation(popOut, 0.1s, linear)
+        +transform(scale(1))
+  &__wrap
+    cursor: pointer
+    background-color: rgba($color-light-grey, 1)
+    border-top-left-radius: 4px
+    border-top-right-radius: 4px
+    position: relative
+    +display-inline-flex
+    width: 100%
+    height: 56px
+    max-width: 250px
+    box-sizing: border-box
+    overflow: hidden
+    will-chamhe: opacity,transform,color
+    &:hover
+      background-color: $color-light-grey
+  &__selected
+    &-text
+      color: rgba($color-black, 0.85)
+      padding: 20px 52px 4px 16px
+      font-size: 1rem
+      line-height: 1.72rem
+      font-weight: 400
+      box-sizing: border-box
+      width: 100%
+      height: 56px
+      min-width: 200px
+      border: none
+      +border-dir(bottom, 1px, solid, #999999)
+      outline: none
+      background-color: transparent 
+      &:hover
+        +border-dir(bottom, 2px, solid, #666666) 
+  &__icon
+    &-dropdown
+      position: absolute
+      +arrow-down(6px, solid, $color-grey)
+      // background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='10' height='5' viewBox='7 10 10 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' opacity='.54' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat 50%
+      left: auto
+      right: 14px
+      bottom: 42%
+      pointer-events: none
+      +transform(rotate(0deg))
+      +cubic
+      &.is-focused
+        bottom: 37%
+        right: 15px
+        +arrow-down(6px, solid, $color-primary)
+        +transform(rotate(180deg))
+  &.is-focused
+    .selectbox
+      &__selected
+        &-text
+          +border-dir(bottom, 2px, solid, $color-primary) 
+  .width
+    &-select
+      width: 250px
+      &--auto
+        width: 100% 
+  .floating
+    &-label
+      left: 16px
+      right: auto
+      top: 21px
+      pointer-events: none
+      color: rgba($color-black , 0.6)
+      &.is
+        &-focused
+          color: $color-primary 
+  

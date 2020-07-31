@@ -1,0 +1,38 @@
+@import '../utils/variables'
+
+#sidebar-menu
+    .nk-sidebar
+        width: 250px
+        background-color: $color-theme
+        &-head
+            width: 250px
+            padding: 14px 30px
+        &-brand
+            top: 5px
+    .nk-menu
+        & >
+            li
+                a
+                    border-radius: 3px
+                    
+                &:hover
+                    & > 
+                        a
+                            border-radius: 3px
+
+
+    & + 
+        .nk-wrap
+            padding-left: 250px
+            & > 
+                .nk-header-fixed
+                    left: 250px
+    .selection
+       .select2
+            &-selection
+                border-color: rgba($color-theme-font, 0.99)  
+                background-color: transparent
+                .select2
+                    &-selection
+                        &__rendered
+                            color: rgba($color-theme-font, 0.99)  
