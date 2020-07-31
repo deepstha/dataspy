@@ -111,6 +111,21 @@
   border: none !important;
 }
 
+.icon-lg {
+  font-size: 30px;
+}
+
+.icon-inline-flex {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  width: 100%;
+}
+
+.sub-text {
+  font-size: 12px;
+}
+
 .nk-files-view-grid .nk-file-icon-type.img {
   width: 100%;
   position: relative;
@@ -540,6 +555,14 @@ input {
 }
 
 iframe {
+  width: 100%;
+}
+
+.iframe-auto {
+  height: 100%;
+}
+
+.iframe-auto iframe {
   width: 100%;
   height: 100%;
 }
